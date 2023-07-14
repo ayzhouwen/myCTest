@@ -39,7 +39,8 @@ void *funB(void *arg)
         return NULL;
 }
 
-int main()
+//如果想运行将cpuTest_main改为main函数即可
+int cpuTest_main()
 {
         pthread_t tid;
         pthread_t tid1;

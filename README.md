@@ -8,6 +8,8 @@ win10+vscode+虚拟机centos7.5  ，远程开发模式
 3）用vscode远程连接centos的目录，确保可以正常ssh连接<br>
 4）vscode中替换launch.json，settings.json tasks.json<br>
 5）选择zwgdb调试可以 正常编译，打断点调试了<br>
+6）测试某个文件时，将xxx_main 改为main，其他的变量函数尽量别重名，如果重名了都以文件名加下划线区分目前是c菜鸟阶段就先这么凑活着用吧
+
 # 发现的问题
 1）调试时有时候单步调试或者逐过程过多发现程序卡死，可以在vscode 的调用堆栈中恢复运行，不必重启vscode<br>
 2）有时候断点红点去了，但是还是进入断点，那么在vscode中的菜单中运行-》删除所有断点即可<br>
