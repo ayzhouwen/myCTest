@@ -39,7 +39,7 @@
             }
         },
         {
-            "label": "build",
+            "label": "build2",
             "type": "shell",
             "dependsOn": ["CMakeBuild"],
             "command": "make clean; make",
