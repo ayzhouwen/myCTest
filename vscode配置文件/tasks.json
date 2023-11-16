@@ -32,19 +32,19 @@
         {
             "label": "CMakeBuild",
             "type": "shell",
-            "command": "cmake ..",
+            "command": "mkdir /root/mycode/myc/cpuTest/build ;cmake /root/mycode/myc/cpuTest",
             "args": [],
             "options": {
-                "cwd": "${fileDirname}/build" 
+                "cwd": "/root/mycode/myc/cpuTest/build" 
             }
         },
         {
-            "label": "build2",
+            "label": "build",
             "type": "shell",
             "dependsOn": ["CMakeBuild"],
             "command": "make clean; make",
             "options": {
-                "cwd": "${fileDirname}/build" 
+                "cwd": "/root/mycode/myc/cpuTest/build" 
             }
         }
     ]

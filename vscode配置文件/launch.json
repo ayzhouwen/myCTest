@@ -1,36 +1,5 @@
-// {
-//     "configurations": [
-//         {
-//             "name": "C/C++: gcc 生成和调试活动文件",
-//             "type": "cppdbg",
-//             "request": "launch",
-//             "program": "${fileDirname}/${fileBasenameNoExtension}",
-//             "args": [],
-//             "stopAtEntry": false,
-//             "cwd": "${fileDirname}",
-//             "environment": [],
-//             "externalConsole": false,
-//             "MIMode": "gdb",
-//             "setupCommands": [
-//                 {
-//                     "description": "为 gdb 启用整齐打印",
-//                     "text": "-enable-pretty-printing",
-//                     "ignoreFailures": true
-//                 },
-//                 {
-//                     "description": "将反汇编风格设置为 Intel",
-//                     "text": "-gdb-set disassembly-flavor intel",
-//                     "ignoreFailures": true
-//                 }
-//             ],
-//             "preLaunchTask": "C/C++: gcc 生成活动文件",
-//             "miDebuggerPath": "/usr/bin/gdb"
-//         }
-//     ],
-//     "version": "2.0.0"
-// }
-
-
+//注意不要使用"${fileDirname}" ,".."等这些相对路径，直接使用绝对路径，
+//否则有可能会造成远程开发模式无法单步调试
 {
     // 使用 IntelliSense 了解相关属性。 
     // 悬停以查看现有属性的描述。
@@ -43,10 +12,10 @@
             "name": "zwgdb调试",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/build/bin/myCTest",
+            "program": "/root/mycode/myc/cpuTest/build/bin/myCTest",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}/build/bin",
+            "cwd": "/root/mycode/myc/cpuTest/build/bin",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
